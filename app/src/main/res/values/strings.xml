@@ -1,0 +1,683 @@
+<resources>
+    <string name="app_name">CSE</string>
+    <string name="dev">Developer: Nannigalaxy</string>
+    <string name="ver">Version: 1.0(beta)</string>
+    <string name="email">Email: nannigalaxy25@gmail.com</string>
+    <string name="credits">Open Source Library Credits:</string>
+    <string name="epanel">ExpansionPanel by Florent37</string>
+
+
+    <string name="events">Events and Workshops</string>
+    <string name="syllb">Syllabus</string>
+    <string name="about">About</string>
+    <string name="qp">Question Papers</string>
+    <string name="class_act">Class</string>
+    <string name="notes">Notes</string>
+
+
+    <string name="sem5">5th Semester</string>
+
+    <string name="cs51">Management and Entrepreneurship for IT Industry</string>
+    <string name="cs52">Computer Networks</string>
+    <string name="cs53">Database Management System</string>
+    <string name="cs54">Automata Theory and Computability</string>
+    <string name="cs553">Advanced Java and J2EE</string>
+    <string name="cs552">Introduction to Software Testing</string>
+    <string name="cs562">Artificial Intelligence</string>
+
+    <string name="csl57">Computer Network Laboratory</string>
+    <string name="csl58">DBMS Laboratory with Mini Project</string>
+    <string name="core">Core</string>
+    <string name="elective">Professional Elective</string>
+    <string name="openelect">Open Elective</string>
+    <string name="lab">Laboratory</string>
+    <string name="man">Manual</string>
+
+    <string name="crd4">Credit: 04</string>
+    <string name="crd3">Credit: 03</string>
+    <string name="crd2">Credit: 02</string>
+
+
+    <string name="cs51_content">
+
+        \n<b>Module 1:</b> \n
+
+        Introduction - Meaning, nature and characteristics of management, scope and
+Functional areas of management, goals of management, levels of management,
+brief overview of evolution of management theories,. Planning- Nature,
+importance, types of plans, steps in planning, Organizing- nature and purpose,
+types of Organization, Staffing- meaning, process of recruitment and selection.
+
+        \n\n
+        <b>Module 2:</b> \n
+
+        Directing and controlling- meaning and nature of directing, leadership styles,
+motivation Theories, Communication- Meaning and importance, Coordination-
+meaning and importance, Controlling- meaning, steps in controlling, methods of
+establishing control.
+
+        \n\n
+        <b>Module 3:</b> \n
+
+Entrepreneur – meaning of entrepreneur, characteristics of entrepreneurs, classification and types of entrepreneurs, various stages in entrepreneurial
+process, role of entrepreneurs in economic development, entrepreneurship in
+India and barriers to entrepreneurship. Identification of business opportunities,
+market feasibility study, technical feasibility study, financial feasibility study and
+social feasibility study.
+
+\n\n
+        <b>Module 4:</b> \n
+
+Preparation of project and ERP - meaning of project, project identification,
+project selection, project report, need and significance of project report, contents,
+formulation, guidelines by planning commission for project report, Enterprise
+Resource Planning: Meaning and Importance- ERP and Functional areas of
+Management – Marketing / Sales- Supply Chain Management – Finance and
+Accounting – Human Resources – Types of reports and methods of report
+generation
+
+        \n\n
+        <b>Module 5:</b> \n
+
+Micro and Small Enterprises: Definition of micro and small enterprises,
+characteristics and advantages of micro and small enterprises, steps in establishing
+micro and small enterprises, Government of India indusial policy 2007 on micro and
+small enterprises, case study (Microsoft), Case study(Captain G R Gopinath),case
+study (N R Narayana Murthy &amp; Infosys), Institutional support: MSME-DI, NSIC,
+SIDBI, KIADB, KSSIDC, TECSOK, KSFC, DIC and District level single window
+agency, Introduction to IPR.
+
+        \n\n
+
+        <b>Text Books:</b>\n
+1. Principles of Management -P. C. Tripathi, P. N. Reddy; Tata McGraw Hill, 4th / 6th
+Edition, 2010.\n
+2. Dynamics of Entrepreneurial Development &amp; Management -Vasant Desai Himalaya
+Publishing House.\n
+3. Entrepreneurship Development -Small Business Enterprises -Poornima M
+Charantimath Pearson Education – 2006.\n
+4. Management and Entrepreneurship - Kanishka Bedi- Oxford University Press-2017\n\n
+        <b>Reference Books:</b>\n
+1. Management Fundamentals -Concepts, Application, Skill Development Robert Lusier
+– Thomson.\n
+2. Entrepreneurship Development -S S Khanka -S Chand &amp; Co.\n
+3. Management -Stephen Robbins -Pearson Education /PHI -17th Edition, 2003\n\n
+
+
+</string>
+
+
+    <string name="cs52_content">
+        \n<b>Module 1:</b>\n
+"Application Layer: Principles of Network Applications: Network Application
+Architectures, Processes Communicating, Transport Services Available to
+Applications, Transport Services Provided by the Internet, Application-Layer
+Protocols. The Web and HTTP: Overview of HTTP, Non-persistent and
+Persistent Connections, HTTP Message Format, User-Server Interaction:
+Cookies, Web Caching, The Conditional GET, File Transfer: FTP Commands &amp;
+Replies, Electronic Mail in the Internet: SMTP, Comparison with HTTP, Mail
+Message Format, Mail Access Protocols, DNS; The Internet's Directory Service:
+Services Provided by DNS, Overview of How DNS Works, DNS Records and
+Messages, Peer-to-Peer Applications: P2P File Distribution, Distributed Hash
+Tables, Socket Programming: creating
+ Network Applications: Socket
+Programming with UDP, Socket Programming with TCP.
+"
+
+        \n\n
+        <b>Module 2:</b> \n
+
+       Transport Layer : Introduction and Transport-Layer Services: Relationship
+Between Transport and Network Layers, Overview of the Transport Layer in the
+Internet, Multiplexing and Demultiplexing: Connectionless Transport: UDP,UDP
+Segment Structure, UDP Checksum, Principles of Reliable Data Transfer:
+Building a Reliable Data Transfer Protocol, Pipelined Reliable Data Transfer
+Protocols, Go-Back-N, Selective repeat, Connection-Oriented Transport TCP:
+The TCP Connection, TCP Segment Structure, Round-Trip Time Estimation and
+Timeout, Reliable Data Transfer, Flow Control, TCP Connection Management,
+Principles of Congestion Control: The Causes and the Costs of Congestion,
+Approaches to Congestion Control, Network-assisted congestion-control
+example, ATM ABR Congestion control, TCP Congestion Control: Fairness.
+
+
+        \n\n
+        <b>Module 3:</b> \n
+"The Network layer: What's Inside a Router?: Input Processing, Switching,
+Output Processing, Where Does Queuing Occur? Routing control plane, IPv6,A
+Brief foray into IP Security, Routing Algorithms: The Link-State (LS) Routing
+Algorithm, The Distance-Vector (DV) Routing Algorithm, Hierarchical Routing,
+Routing in the Internet, Intra-AS Routing in the Internet: RIP, Intra-AS Routing
+in the Internet: OSPF, Inter/AS Routing: BGP, Broadcast Routing Algorithms
+and Multicast.
+"
+
+\n\n
+        <b>Module 4:</b> \n
+Wireless and Mobile Networks: Cellular Internet Access: An Overview of
+Cellular Network Architecture, 3G Cellular Data Networks: Extending the
+Internet to Cellular subscribers, On to 4G:LTE,Mobility management: Principles,
+Addressing, Routing to a mobile node, Mobile IP, Managing mobility in cellular
+Networks, Routing calls to a Mobile user, Handoffs in GSM, Wireless and
+Mobility: Impact on Higher-layer protocols.
+
+
+        \n\n
+        <b>Module 5:</b> \n
+Multimedia Networking: Properties of video, properties of Audio, Types of
+multimedia Network Applications, Streaming stored video: UDP Streaming,
+HTTP Streaming, Adaptive streaming and DASH, content distribution Networks,
+case studies: Netflix, You Tube and Kankan.
+Network Support for Multimedia: Dimensioning Best-Effort Networks,
+Providing Multiple Classes of Service, Diffserv, Per-Connection Quality-of-
+Service (QoS) Guarantees: Resource Reservation and Call Admission
+
+        \n\n
+
+        <b>Text Books:</b>\n
+1. James F Kurose and Keith W Ross, Computer Networking, A Top-Down Approach,
+Sixth edition, Pearson,2017 .\n\n
+        <b>Reference Books:</b>\n
+1. Behrouz A Forouzan, Data and Communications and Networking, Fifth Edition,
+McGraw Hill, Indian Edition\n
+2. Larry L Peterson and Brusce S Davie, Computer Networks, fifth edition, ELSEVIER\n
+3. Andrew S Tanenbaum, Computer Networks, fifth edition, Pearson\n
+4. Mayank Dave, Computer Networks, Second edition, Cengage Learning
+\n\n
+    </string>
+    <string name="cs53_content">        \n<b>Module 1:</b> \n
+
+Introduction to Databases: Introduction, Characteristics of database approach,
+Advantages of using the DBMS approach, History of database applications.
+Overview of Database Languages and Architectures: Data Models, Schemas,
+and Instances. Three schema architecture and data independence, database
+languages, and interfaces, The Database System environment. Conceptual Data
+Modelling using Entities and Relationships: Entity types, Entity sets,
+attributes, roles, and structural constraints, Weak entity types, ER diagrams,
+examples, Specialization and Generalization.
+
+
+
+        \n\n
+        <b>Module 2:</b> \n
+
+Relational Model: Relational Model Concepts, Relational Model Constraints
+and relational database schemas, Update operations, transactions, and dealing
+with constraint violations. Relational Algebra: Unary and Binary relational
+operations, additional relational operations (aggregate, grouping, etc.) Examples
+of Queries in relational algebra. Mapping Conceptual Design into a Logical
+Design: Relational Database Design using ER-to-Relational mapping. SQL:
+SQL data definition and data types, specifying constraints in SQL, retrieval
+queries in SQL, INSERT, DELETE, and UPDATE statements in SQL,
+Additional features of SQL.
+
+
+
+        \n\n
+        <b>Module 3:</b> \n
+
+SQL : Advances Queries: More complex SQL retrieval queries, Specifying
+constraints as assertions and action triggers, Views in SQL, Schema change
+statements in SQL. Database Application Development: Accessing databases
+from applications, An introduction to JDBC, JDBC classes and interfaces, SQLJ,
+Stored procedures, Case study: The internet Bookshop. Internet Applications:
+The three-Tier application architecture, The presentation layer, The Middle Tier
+
+
+\n\n
+        <b>Module 4:</b> \n
+Normalization: Database Design Theory – Introduction to Normalization using
+Functional and Multivalued Dependencies: Informal design guidelines for
+relation schema, Functional Dependencies, Normal Forms based on Primary
+Keys, Second and Third Normal Forms, Boyce-Codd Normal Form, Multivalued
+Dependency and Fourth Normal Form, Join Dependencies and Fifth Normal
+Form. Normalization Algorithms: Inference Rules, Equivalence, and Minimal
+Cover, Properties of Relational Decompositions, Algorithms for Relational
+Database Schema Design, Nulls, Dangling tuples, and alternate Relational
+Designs, Further discussion of Multivalued dependencies and 4NF, Other
+dependencies and Normal Forms
+
+
+        \n\n
+        <b>Module 5:</b> \n
+Transaction Processing: Introduction to Transaction Processing, Transaction
+and System concepts, Desirable properties of Transactions, Characterizing
+schedules based on recoverability, Characterizing schedules based on
+Serializability, Transaction support in SQL. Concurrency Control in
+Databases: Two-phase locking techniques for Concurrency control, Concurrency
+control based on Timestamp ordering, Multiversion Concurrency control
+techniques, Validation Concurrency control techniques, Granularity of Data
+items and Multiple Granularity Locking. Introduction to Database Recovery
+Protocols: Recovery Concepts, NO-UNDO/REDO recovery based on Deferred
+update, Recovery techniques based on immediate update, Shadow paging,
+Database backup and recovery from catastrophic failures
+
+        \n\n
+
+<b>Text Books:</b>       \n
+1. Database systems Models, Languages, Design and Application Programming,
+RamezElmasri and Shamkant B. Navathe, 7th Edition, 2017, Pearson.\n
+2. Database management systems, Ramakrishnan, and Gehrke, 3 Edition, 2014,
+McGraw Hill\n\n
+        <b>Reference Books:</b>\n
+1. Silberschatz Korth and Sudharshan, Database System Concepts, 6th Edition, Mc-
+GrawHill, 2013.\n
+2. Coronel, Morris, and Rob, Database Principles Fundamentals of Design,
+Implementation and Management, Cengage Learning 2012.\n\n
+
+    </string>
+    <string name="cs54_content">       \n<b>Module 1:</b> \n
+Why study the Theory of Computation, Languages and Strings: Strings,
+Languages. A Language Hierarchy, Computation, Finite State Machines
+(FSM): Deterministic FSM, Regular languages, Designing FSM,
+Nondeterministic FSMs, From FSMs to Operational Systems, Simulators for
+FSMs, Minimizing FSMs, Canonical form of Regular languages, Finite State
+Transducers, Bidirectional Transducers.
+
+        \n\n
+        <b>Module 2:</b> \n
+
+Regular Expressions (RE): what is a RE?, Kleene’s theorem, Applications of
+REs, Manipulating and Simplifying REs. Regular Grammars: Definition,
+Regular Grammars and Regular languages. Regular Languages (RL) and Non-
+regular Languages: How many RLs, To show that a language is regular, Closure
+properties of RLs, to show some languages are not RLs.
+
+        \n\n
+        <b>Module 3:</b> \n
+Context-Free Grammars(CFG): Introduction to Rewrite Systems and Grammars,
+CFGs and languages, designing CFGs, simplifying CFGs, proving that a
+Grammar is correct, Derivation and Parse trees, Ambiguity, Normal Forms.
+Pushdown Automata (PDA): Definition of non-deterministic PDA, Deterministic
+and Non-deterministic PDAs, Non-determinism and Halting, alternative
+equivalent definitions of a PDA, alternatives that are not equivalent to PDA.
+
+
+
+\n\n
+        <b>Module 4:</b> \n
+Context-Free and Non-Context-Free Languages: Where do the Context-Free
+Languages(CFL) fit, Showing a language is context-free, Pumping theorem for
+CFL, Important closure properties of CFLs, Deterministic CFLs. Algorithms and
+Decision Procedures for CFLs: Decidable questions, Un-decidable questions.
+Turing Machine: Turing machine model, Representation, Language acceptability
+by TM, design of TM, Techniques for TM construction.
+
+
+        \n\n
+        <b>Module 5:</b> \n
+Variants of Turing Machines (TM), The model of Linear Bounded automata:
+Decidability: Definition of an algorithm, decidability, decidable languages,
+Undecidable languages, halting problem of TM, Post correspondence problem.
+Complexity: Growth rate of functions, the classes of P and NP, Quantum
+Computation: quantum computers, Church-Turing thesis.
+
+        \n\n
+
+
+        <b>Text Books:</b>\n
+1. Elaine Rich, Automata, Computability and Complexity, 1st Edition, Pearson
+Education,2012/2013\n
+2. K L P Mishra, N Chandrasekaran , 3rd Edition, Theory of Computer Science, PhI, 2012.\n\n
+        <b>Reference Books:</b>\n
+1. John E Hopcroft, Rajeev Motwani, Jeffery D Ullman, Introduction to AutomataTheory,
+Languages, and Computation, 3rd Edition, Pearson Education, 2013\n
+2. Michael Sipser : Introduction to the Theory of Computation, 3rd edition, Cengage
+learning,2013\n
+3. John C Martin, Introduction to Languages and The Theory of Computation, 3rd Edition,
+Tata McGraw –Hill Publishing Company Limited, 2013\n
+4. Peter Linz, “An Introduction to Formal Languages and Automata”, 3rd Edition, Narosa
+Publishers, 1998\n
+5. Basavaraj S. Anami, Karibasappa K G, Formal Languages and Automata theory, Wiley
+India, 2012\n
+6. C K Nagpal, Formal Languages and Automata Theory, Oxford University press, 2012.\n\n
+
+        </string>
+    <string name="cs552_content">
+
+        \n<b>Module 1:</b> \n
+
+Basics of Software Testing: Basic definitions, Software Quality , Requirements,
+Behaviour and Correctness, Correctness versus Reliability, Testing and
+Debugging, Test cases, Insights from a Venn diagram, Identifying test cases,
+Test-generation Strategies, Test Metrics, Error and fault taxonomies , Levels of
+testing, Testing and Verification, Static Testing.
+
+        \n\n
+        <b>Module 2:</b> \n
+
+Problem Statements: Generalized pseudo code, the triangle problem, the
+NextDate function, the commission problem, the SATM (Simple Automatic
+Teller Machine) problem, the currency converter, Saturn windshield wiper
+Functional Testing: Boundary value analysis, Robustness testing, Worst-case
+testing, Robust Worst testing for triangle problem, NextDate problem and
+commission problem, Equivalence classes, Equivalence test cases for the triangle
+problem, NextDate function, and the commission problem, Guidelines and
+observations, Decision tables, Test cases for the triangle problem, NextDate
+function, and the commission problem, Guidelines and observations.
+
+
+        \n\n
+        <b>Module 3:</b> \n
+Fault Based Testing: Overview, Assumptions in fault based testing, Mutation
+analysis, Fault-based adequacy criteria, Variations on mutation analysis.
+Structural Testing: Overview, Statement testing, Branch testing, Condition
+testing, Path testing: DD paths, Test coverage metrics, Basis path testing,
+guidelines and observations, Data –Flow testing: Definition-Use testing, Slice-
+based testing, Guidelines and observations.
+
+
+
+
+\n\n
+        <b>Module 4:</b> \n
+Test Execution: Overview of test execution, from test case specification to test
+cases, Scaffolding, Generic versus specific scaffolding, Test oracles, Self-checks
+as oracles, Capture and replay Process Framework :Basic principles:
+Sensitivity, redundancy, restriction, partition, visibility, Feedback, the quality
+process, Planning and monitoring, Quality goals, Dependability properties
+,Analysis Testing, Improving the process, Organizational factors.
+Planning and Monitoring the Process: Quality and process, Test and analysis
+strategies and plans, Risk planning, monitoring the process, Improving the
+process, the quality team.
+
+
+        \n\n
+        <b>Module 5:</b> \n
+Integration and Component-Based Software Testing: Overview, Integration
+testing strategies, Testing components and assemblies. System, Acceptance and
+Regression Testing: Overview, System testing, Acceptance testing, Usability,
+Regression testing, Regression test selection techniques, Test case prioritization
+and selective execution. Levels of Testing, Integration Testing: Traditional
+view of testing levels, Alternative life-cycle models, The SATM system,
+Separating integration and system testing, A closer look at the SATM system,
+Decomposition-based, call graph-based, Path-based integrations.
+        \n\n
+
+        <b>Text Books:</b>\n
+1. Paul C. Jorgensen: Software Testing, A Craftsman’s Approach, 3rd Edition, Auerbach
+Publications, 2008.\n
+2. Mauro Pezze, Michal Young: Software Testing and Analysis – Process, Principles and
+Techniques, Wiley India, 2009.\n
+3. Aditya P Mathur: Foundations of Software Testing, Pearson Education, 2008.\n\n
+        <b>Reference Books:</b>\n
+1. Software testing Principles and Practices – Gopalaswamy Ramesh, Srinivasan Desikan, 2nd Edition, Pearson, 2007.\n
+2. Software Testing – Ron Patton, 2nd edition, Pearson Education, 2004.\n
+3. The Craft of Software Testing – Brian Marrick, Pearson Education, 1995.\n
+4. Anirban Basu, Software Quality Assurance, Testing and Metrics, PHI, 2015\n
+5. Naresh Chauhan, Software Testing, Oxford University press.\n\n
+
+
+    </string>
+    <string name="cs553_content">
+        \n<b>Module 1:</b> \n
+Enumerations, Autoboxing and Annotations(metadata): Enumerations,
+Enumeration fundamentals, the values() and valueOf() Methods, java
+enumerations are class types, enumerations Inherits Enum, example, type
+wrappers, Autoboxing, Autoboxing and Methods, Autoboxing/Unboxing occurs
+in Expressions, Autoboxing/Unboxing, Boolean and character values,
+Autoboxing/Unboxing helps prevent errors, A word of Warning. Annotations,
+Annotation basics, specifying retention policy, Obtaining Annotations at run
+time by use of reflection, Annotated element Interface, Using Default values,
+Marker Annotations, Single Member annotations, Built-In annotations.
+
+        \n\n
+        <b>Module 2:</b> \n
+
+The collections and Framework: Collections Overview, Recent Changes to
+Collections, The Collection Interfaces, The Collection Classes, Accessing a
+collection Via an Iterator, Storing User Defined Classes in Collections, The
+Random Access Interface, Working With Maps, Comparators, The Collection
+Algorithms, Why Generic Collections?, The legacy Classes and Interfaces,
+Parting Thoughts on Collections.
+
+
+        \n\n
+        <b>Module 3:</b> \n
+String Handling :The String Constructors, String Length, Special String
+Operations, String Literals, String Concatenation, String Concatenation with
+Other Data Types, String Conversion and toString( ) Character Extraction,
+charAt( ), getChars( ), getBytes( ) toCharArray(), String Comparison, equals( )
+and equalsIgnoreCase( ), regionMatches( ) startsWith( ) and endsWith( ), equals(
+) Versus == , compareTo( ) Searching Strings, Modifying a String, substring( ),
+concat( ), replace( ), trim( ), Data Conversion Using valueOf( ), Changing the
+Case of Characters Within a String, Additional String Methods, StringBuffer ,
+StringBuffer Constructors, length( ) and capacity( ), ensureCapacity( ),
+setLength( ), charAt( ) and setCharAt( ), getChars( ),append( ), insert( ), reverse(
+), delete( ) and deleteCharAt( ), replace( ), substring( ), Additional StringBuffer
+Methods, StringBuilder
+
+\n\n
+        <b>Module 4:</b> \n
+Background; The Life Cycle of a Servlet; Using Tomcat for Servlet
+Development; A simple Servlet; The Servlet API; The Javax.servlet Package;
+Reading Servlet Parameter; The Javax.servlet.http package; Handling HTTP
+Requests and Responses; Using Cookies; Session Tracking. Java Server Pages
+(JSP): JSP, JSP Tags, Tomcat, Request String, User Sessions, Cookies, Session
+Objects
+
+
+        \n\n
+        <b>Module 5:</b> \n
+The Concept of JDBC; JDBC Driver Types; JDBC Packages; A Brief Overview
+of the JDBC process; Database Connection; Associating the JDBC/ODBC
+Bridge with the Database; Statement Objects; ResultSet; Transaction Processing;
+Metadata, Data types; Exceptions.
+        \n\n
+
+        <b>Text Books:</b>\n
+
+1. Herbert Schildt: JAVA the Complete Reference, 7th/9th Edition, Tata McGraw Hill,
+2007.\n
+2. Jim Keogh: J2EE-TheCompleteReference, McGraw Hill, 2007.\n\n
+        <b>Reference Books:</b>\n
+
+1. Y. Daniel Liang: Introduction to JAVA Programming, 7th Edition, Pearson Education,
+2007.\n
+2. Stephanie Bodoff et al: The J2EE Tutorial, 2nd Edition, Pearson Education,2004.\n
+3. Uttam K Roy, Advanced JAVA programming, Oxford University press, 2015.\n\n
+
+        </string>
+    <string name="cs562_content"> \n<b>Module 1:</b> \n
+What is artificial intelligence?, Problems, Problem Spaces and search, Heuristic
+search technique
+
+
+        \n\n
+        <b>Module 2:</b> \n
+Knowledge Representation Issues, Using Predicate Logic, Representing
+knowledge using Rules,
+
+
+        \n\n
+        <b>Module 3:</b> \n
+Symbolic Reasoning under Uncertainty, Statistical reasoning, Weak Slot and
+Filter Structures.
+
+
+\n\n
+        <b>Module 4:</b> \n
+Strong slot-and-filler structures, Game Playing.
+
+
+
+        \n\n
+        <b>Module 5:</b> \n
+Natural Language Processing, Learning, Expert Systems.
+        \n\n
+
+        <b>Text Books:</b>\n
+1. E. Rich , K. Knight &amp; S. B. Nair - Artificial Intelligence, 3/e, McGraw Hill.\n\n
+        <b>Reference Books:</b>\n
+1. Artificial Intelligence: A Modern Approach, Stuart Rusell, Peter Norving, Pearson
+Education 2nd Edition.\n\n
+
+</string>
+    <string name="csl57_content"><b>Description:</b>\n
+For the experiments below modify the topology and parameters set for the experiment and
+take multiple rounds of reading and analyze the results available in log files. Plot necessary
+graphs and conclude. Use NS2/NS3.\n\n
+<b>Lab Experiments:</b>\n
+        <b>PART A</b>\n
+1. Implement three nodes point – to – point network with duplex links between them.
+Set the queue size, vary the bandwidth and find the number of packets dropped.\n
+2. Implement transmission of ping messages/trace route over a network topology
+consisting of 6 nodes and find the number of packets dropped due to congestion.\n
+3. Implement an Ethernet LAN using n nodes and set multiple traffic nodes and plot
+congestion window for different source / destination.\n
+4. Implement simple ESS and with transmitting nodes in wire-less LAN by simulation
+and determine the performance with respect to transmission of packets.\n
+5. Implement and study the performance of GSM on NS2/NS3 (Using MAC layer) or
+equivalent environment.\n
+6. Implement and study the performance of CDMA on NS2/NS3 (Using stack called
+Call net) or equivalent environment.\n\n
+<b>PART B</b>\n
+Implement the following in Java:\n
+7. Write a program for error detecting code using CRC-CCITT (16- bits).\n
+8. Write a program to find the shortest path between vertices using bellman-ford
+algorithm.\n
+9. Using TCP/IP sockets, write a client – server program to make the client send the file
+name and to make the server send back the contents of the requested file if present.\n
+10. Write a program on datagram socket for client/server to display the messages on
+client side, typed at the server side.\n
+11. Write a program for simple RSA algorithm to encrypt and decrypt the data.\n
+12. Write a program for congestion control using leaky bucket algorithm.\n
+
+        <b>Conduction of Practical Examination:</b>\n
+1. All laboratory experiments are to be included for practical examination.\n
+2. Students are allowed to pick one experiment from part A and part B with lot.\n
+3. Strictly follow the instructions as printed on the cover page of answer script.\n
+4. Marks distribution: Procedure + Conduction + Viva: 80\n
+Part A: 10+25+5
+ =40\n
+Part B: 10+25+5
+ =40\n
+5. Change of experiment is allowed only once and marks allotted to the procedure part to be
+made zero.\n\n
+</string>
+    <string name="csl58_content">\n<b>Description:</b>\n
+        <b>PART-A: SQL Programming (Max. Exam Mks. 50)</b>\n
+• Design, develop, and implement the specified queries for the following problems
+using Oracle, MySQL, MS SQL Server, or any other DBMS under
+LINUX/Windows environment.\n
+• Create Schema and insert at least 5 records for each table. Add appropriate
+database constraints.\n
+        <b>PART-B: Mini Project (Max. Exam Mks. 30)</b>
+• Use Java, C#, PHP, Python, or any other similar front-end tool.\n
+        All applications must be demonstrated on desktop/laptop as a stand-alone or web
+based application (Mobile apps on Android/IOS are not permitted.)\n\n
+        <b>Lab Experiments:</b>\n
+        <b>Part A: SQL Programming</b>\n
+1) Consider the following schema for a Library Database:\n
+BOOK(Book_id, Title, Publisher_Name, Pub_Year)\n
+BOOK_AUTHORS(Book_id, Author_Name)\n
+PUBLISHER(Name, Address, Phone)\n
+BOOK_COPIES(Book_id, Branch_id, No-of_Copies)\n
+BOOK_LENDING(Book_id, Branch_id, Card_No, Date_Out, Due_Date)\n
+LIBRARY_BRANCH(Branch_id, Branch_Name, Address)\n
+Write SQL queries to\n
+1. Retrieve details of all books in the library – id, title, name of publisher,
+authors, number of copies in each branch, etc.\n
+2. Get the particulars of borrowers who have borrowed more than 3 books, but
+from Jan 2017 to Jun 2017.\n
+3. Delete a book in BOOK table. Update the contents of other tables to reflect
+this data manipulation operation.\n
+4. Partition the BOOK table based on year of publication. Demonstrate its
+working with a simple query.\n
+5. Create a view of all books and its number of copies that are currently
+available in the Library.\n\n
+2) Consider the following schema for Order Database:\n
+SALESMAN(Salesman_id, Name, City, Commission)\n
+CUSTOMER(Customer_id, Cust_Name, City, Grade, Salesman_id)\n
+ORDERS(Ord_No, Purchase_Amt, Ord_Date, Customer_id, Salesman_id)\n
+Write SQL queries to\n
+1. Count the customers with grades above Bangalore’s average.\n
+2. Find the name and numbers of all salesman who had more than one customer.\n
+3. List all the salesman and indicate those who have and don’t have customers in
+their cities (Use UNION operation.)\n
+4. Create a view that finds the salesman who has the customer with the highest
+order of a day.\n
+5. Demonstrate the DELETE operation by removing salesman with id 1000. All
+his orders must also be deleted.\n\n
+3) Consider the schema for Movie Database:\n
+ACTOR(Act_id, Act_Name, Act_Gender)\n
+DIRECTOR(Dir_id, Dir_Name, Dir_Phone)\n
+MOVIES(Mov_id, Mov_Title, Mov_Year, Mov_Lang, Dir_id)\n
+MOVIE_CAST(Act_id, Mov_id, Role)\n
+RATING(Mov_id, Rev_Stars)\n
+Write SQL queries to\n
+1. List the titles of all movies directed by ‘Hitchcock’.\n
+2. Find the movie names where one or more actors acted in two or more movies.\n
+3. List all actors who acted in a movie before 2000 and also in a movie after
+2015 (use JOIN operation).\n
+4. Find the title of movies and number of stars for each movie that has at least
+one rating and find the highest number of stars that movie received. Sort the
+result by movie title.\n
+5. Update rating of all movies directed by ‘Steven Spielberg’ to 5.\n\n
+4) Consider the schema for College Database:\n
+STUDENT(USN, SName, Address, Phone, Gender)\n
+SEMSEC(SSID, Sem, Sec)\n
+CLASS(USN, SSID)\n
+SUBJECT(Subcode, Title, Sem, Credits)\n
+IAMARKS(USN, Subcode, SSID, Test1, Test2, Test3, FinalIA)\n
+Write SQL queries to\n
+1. List all the student details studying in fourth semester ‘C’ section.\n
+2. Compute the total number of male and female students in each semester and in
+each section.\n
+3. Create a view of Test1 marks of student USN ‘1BI15CS101’ in all subjects.\n
+4. Calculate the FinalIA (average of best two test marks) and update the
+corresponding table for all students.\n
+5. Categorize students based on the following criterion:\n
+If FinalIA = 17 to 20 then CAT = ‘Outstanding’\n
+If FinalIA = 12 to 16 then CAT = ‘Average’\n
+If FinalIA &lt; 12 then CAT = ‘Weak’\n
+Give these details only for 8th semester A, B, and C section students.\n\n
+5) Consider the schema for Company Database:\n
+EMPLOYEE(SSN, Name, Address, Sex, Salary, SuperSSN, DNo)\n
+DEPARTMENT(DNo, DName, MgrSSN, MgrStartDate)\n
+DLOCATION(DNo,DLoc)\n
+PROJECT(PNo, PName, PLocation, DNo)\n
+WORKS_ON(SSN, PNo, Hours)\n
+Write SQL queries to\n
+1. Make a list of all project numbers for projects that involve an employee
+whose last name is ‘Scott’, either as a worker or as a manager of the
+department that controls the project.\n
+2. Show the resulting salaries if every employee working on the ‘IoT’ project is
+given a 10 percent raise.\n
+3. Find the sum of the salaries of all employees of the ‘Accounts’ department, as
+well as the maximum salary, the minimum salary, and the average salary in
+this department.\n
+4. Retrieve the name of each employee who works on all the projects
+controlledby department number 5 (use NOT EXISTS operator).\n
+5. For each department that has more than five employees, retrieve the
+department number and the number of its employees who are making more
+than Rs. 6,00,000.\n\n
+        <b>Part B: Mini project</b>\n
+• For any problem selected, write the ER Diagram, apply ER-mapping rules,
+normalize the relations, and follow the application development process.\n
+• Make sure that the application should have five or more tables, at least one
+trigger and one stored procedure, using suitable frontend tool.\n
+• Indicative areas include; health care, education, industry, transport, supply chain,
+etc.\n
+Course outcomes: The students should be able to:\n
+• Create, Update and query on the database.\n
+• Demonstrate the working of different concepts of DBMS.\n
+• Implement, analyze and evaluate the project developed for an application.\n\n
+        <b>Conduction of Practical Examination:</b>\n
+1. All laboratory experiments from part A are to be included for practical
+examination.\n
+2. Mini project has to be evaluated for 30 Marks.\n
+3. Report should be prepared in a standard format prescribed for project work.\n
+4. Students are allowed to pick one experiment from the lot.\n
+5. Strictly follow the instructions as printed on the cover page of answer script.\n
+6. Marks distribution:\n
+\t a) Part A: Procedure + Conduction + Viva:10 + 35 +5 =50 Marks\n
+\t b) Part B: Demonstration + Report + Viva voce = 15+10+05 = 30 Marks\n
+7. Change of experiment is allowed only once and marks allotted to the procedure
+part to be made zero.\n\n
+</string>
+
+
+
+
+
+</resources>

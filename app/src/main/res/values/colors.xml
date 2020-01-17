@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FAFAFA</color>
+    <color name="colorAccent">#0A56C9</color>
+    <color name="Cyan">#16c9b8</color>
+    <color name="White">#ffffff</color>
+    <color name="cBlue">#2577db</color>
+    <color name="black_overlay">#BA0C0C0C</color>
+    <color name="black">#000000</color>
+    <color name="card_bg">#EB030303</color>
+</resources>
