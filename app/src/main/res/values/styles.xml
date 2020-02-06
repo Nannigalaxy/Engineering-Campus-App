@@ -4,7 +4,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.DayNight">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/White</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -12,6 +12,16 @@
         <item name="actionMenuTextColor">@color/black_overlay</item>
     </style>
 
+    <style name="AppTheme2" parent="Theme.AppCompat.DayNight">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="actionMenuTextColor">@color/White</item>
+    </style>
     <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.DayNight.DarkActionBar">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
@@ -19,9 +29,23 @@
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
+    <style name="MaterialTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/White</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="ProgressBarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">@color/secondary2</item>
+    </style>
+
     <style name="Button" parent="Widget.AppCompat.Button.Colored">
         <item name="colorButtonNormal">@color/White</item>
         <item name="android:textColor">@color/cBlue</item>
+        <item name="android:radius">10dp</item>
     </style>
 
     <style name="Button1" parent="Widget.AppCompat.Button.Colored">
@@ -37,56 +61,83 @@
         <item name="android:background">@drawable/button_border</item>
         <item name="android:stateListAnimator">@null</item>
         <item name="android:layout_height">50dp</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">14sp</item></style>
 
+        <style name="MaterialOutlinedButton1" parent="Widget.MaterialComponents.Button.TextButton">
+            <item name="android:paddingLeft">16dp</item>
+            <item name="android:paddingRight">16dp</item>
+            <item name="strokeColor">@color/cBlue</item>
+            <item name="android:textColor">@color/cBlue</item>
+            <item name="strokeWidth">1dp</item>
+            <item name="android:textSize">14sp</item>
+            <item name="android:layout_margin">5sp</item>
+        </style>
+
+    <style name="main_text" parent="@style/AppTheme">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black_overlay</item>
     </style>
 
+    <style name="main_text2" parent="@style/AppTheme">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
 
     <style name="code" parent="@style/AppTheme">
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">@color/black_overlay</item>
         <item name="android:layout_marginTop">10dp</item>
-        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
     </style>
 
     <style name="name" parent="@style/AppTheme">
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
     </style>
 
     <style name="header_things" parent="@style/AppTheme">
         <item name="android:textColor">#A0A0A0</item>
-        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
     </style>
 
     <style name="v_bar_blue" parent="@style/AppTheme">
-        <item name="android:layout_width">5dp</item>
-        <item name="android:layout_height">100dp</item>
-        <item name="android:layout_marginTop">10dp</item>
-        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:layout_marginStart">-30dp</item>
         <item name="android:background">#00b2cc</item>
     </style>
 
     <style name="v_bar_gold" parent="@style/AppTheme">
-        <item name="android:layout_width">5dp</item>
-        <item name="android:layout_height">100dp</item>
-        <item name="android:layout_marginTop">10dp</item>
-        <item name="android:layout_marginBottom">10dp</item>
-        <item name="android:background">#ffd600</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:layout_marginStart">-30dp</item>
+        <item name="android:background">#D3AF00</item>
     </style>
 
-    <style name="v_bar_green" parent="@style/AppTheme">
-        <item name="android:layout_width">5dp</item>
-        <item name="android:layout_height">100dp</item>
-        <item name="android:layout_marginTop">10dp</item>
-        <item name="android:layout_marginBottom">10dp</item>
+    <style name="v_bar_violet" parent="@style/AppTheme">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:layout_marginStart">-30dp</item>
         <item name="android:background">#7b1fa2</item>
     </style>
 
     <style name="content" parent="@style/AppTheme">
         <item name="android:padding">5dp</item>
         <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="sembtn">
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:background">@drawable/button_border</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:foreground">@drawable/ripple_effect</item>
+        <item name="android:drawableEnd">@drawable/ic_right_black_24dp</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
 </resources>

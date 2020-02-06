@@ -9,6 +9,7 @@
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:grantUriPermissions="true"
         android:icon="@mipmap/cs_logo"
         android:label="@string/app_name"
@@ -18,9 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".QpPage"></activity>
-        <activity android:name=".NotesPage" />
-        <activity android:name=".class_activity" />
+
+        <activity android:name=".Settings"
+            android:theme="@style/MaterialTheme"/>
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -32,27 +33,47 @@
                 android:resource="@xml/provider_paths" />
         </provider>
 
+        <activity android:name=".WebActivity" />
+        <activity
+            android:name=".QpPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/MaterialTheme" />
+        <activity
+            android:name=".NotesPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/MaterialTheme" />
+        <activity
+            android:name=".Class_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".About"
             android:label="@null"
             android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".pdf"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
         <activity
             android:name=".ComingsoonActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".SemesterList"
             android:label="Semester"
             android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".SylbActivity"
-            android:parentActivityName=".MainActivity2" />
+            android:parentActivityName=".SemesterList"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".splashscreen"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -64,6 +85,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

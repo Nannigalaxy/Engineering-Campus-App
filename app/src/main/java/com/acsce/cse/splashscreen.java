@@ -18,17 +18,6 @@ public class splashscreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splashscreen);
 
-        AssetManager assetManager = getAssets();
-        ImageView imageView1 = findViewById(R.id.cs_logo);
-
-        try {
-            InputStream ims1 = assetManager.open("cse.png");
-            Drawable d1 = Drawable.createFromStream(ims1, null);
-            imageView1.setImageDrawable(d1);
-        } catch (IOException ex) {
-            return;
-        }
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QpPage">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorAccent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+            android:backgroundTint="@color/White">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/notes"
+                android:gravity="center"
+                android:paddingStart="-70dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"/>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp">
+
+            <!--        section 1 start-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                android:padding="20dp"
+                app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cs61"
+                    android:padding="5dp"
+                    style="@style/main_text2"/>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:rowCount="6"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:layout_gravity="center">
+
+
+                    <Button
+                        android:id="@+id/button1"
+                        style="@style/MaterialOutlinedButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:text="@string/module_i" />
+
+                    <Button
+                    android:id="@+id/button2"
+                    style="@style/MaterialOutlinedButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:text="@string/module_ii" />
+                    <Button
+                        android:id="@+id/button3"
+                        style="@style/MaterialOutlinedButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:text="@string/module_iii"/>
+                    <Button
+                        android:id="@+id/button4"
+                        style="@style/MaterialOutlinedButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:text="@string/module_iv"/>
+                    <Button
+                        android:id="@+id/button5"
+                        style="@style/MaterialOutlinedButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:text="@string/module_v" />
+                </GridLayout>
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--section 1 end-->
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                android:padding="20dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cs62"
+                        android:padding="5dp"
+                        style="@style/main_text2"/>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:rowCount="6"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:layout_gravity="center">
+
+
+                        <Button
+                            android:id="@+id/button6"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_i" />
+
+                        <Button
+                            android:id="@+id/button7"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_ii" />
+                        <Button
+                            android:id="@+id/button8"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_iii"/>
+                        <Button
+                            android:id="@+id/button9"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_iv"/>
+                        <Button
+                            android:id="@+id/button10"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_v" />
+                    </GridLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                android:padding="20dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cs63"
+                        android:padding="5dp"
+                        style="@style/main_text2"/>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:rowCount="6"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:layout_gravity="center">
+
+
+                        <Button
+                            android:id="@+id/button11"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_i" />
+
+                        <Button
+                            android:id="@+id/button12"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_ii" />
+                        <Button
+                            android:id="@+id/button13"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_iii"/>
+                        <Button
+                            android:id="@+id/button14"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_iv"/>
+                        <Button
+                            android:id="@+id/button15"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_v" />
+                    </GridLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                android:padding="20dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cs64"
+                        android:padding="5dp"
+                        style="@style/main_text2"/>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:rowCount="6"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:layout_gravity="center">
+
+
+                        <Button
+                            android:id="@+id/button16"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_i" />
+
+                        <Button
+                            android:id="@+id/button17"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_ii" />
+                        <Button
+                            android:id="@+id/button18"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_iii"/>
+                        <Button
+                            android:id="@+id/button19"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_iv"/>
+                        <Button
+                            android:id="@+id/button20"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_v" />
+                    </GridLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                android:padding="20dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cs651"
+                        android:padding="5dp"
+                        style="@style/main_text2"/>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:rowCount="6"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:layout_gravity="center">
+
+
+                        <Button
+                            android:id="@+id/button21"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_i" />
+
+                        <Button
+                            android:id="@+id/button22"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_ii" />
+                        <Button
+                            android:id="@+id/button23"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_iii"/>
+                        <Button
+                            android:id="@+id/button24"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_iv"/>
+                        <Button
+                            android:id="@+id/button25"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_v" />
+                    </GridLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                android:padding="20dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cs653"
+                        android:padding="5dp"
+                        style="@style/main_text2"/>
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:rowCount="6"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:layout_gravity="center">
+
+
+                        <Button
+                            android:id="@+id/button26"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_i" />
+
+                        <Button
+                            android:id="@+id/button27"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_ii" />
+                        <Button
+                            android:id="@+id/button28"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_iii"/>
+                        <Button
+                            android:id="@+id/button29"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_iv"/>
+                        <Button
+                            android:id="@+id/button30"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:text="@string/module_v" />
+                    </GridLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                android:padding="20dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cs664"
+                        android:padding="5dp"
+                        style="@style/main_text2"/>
+
+
+                        <Button
+                            android:id="@+id/button31"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:text="@string/think_python_2nd_edition" />
+
+                        <Button
+                            android:id="@+id/button32"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:text="@string/introducing_python" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                android:padding="20dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/csl67"
+                        android:padding="5dp"
+                        style="@style/main_text2"/>
+
+
+                        <Button
+                            android:id="@+id/button33"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:text="@string/man" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp"
+                android:padding="20dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/csl68"
+                        android:padding="5dp"
+                        style="@style/main_text2"/>
+
+                        <Button
+                            android:id="@+id/button34"
+                            style="@style/MaterialOutlinedButton1"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:text="@string/man" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

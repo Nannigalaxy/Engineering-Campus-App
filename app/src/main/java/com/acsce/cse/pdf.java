@@ -1,9 +1,7 @@
 package com.acsce.cse;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
-
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
@@ -11,64 +9,59 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.widget.Toast;
 import java.io.File;
 
-
-
-
 public class pdf extends AppCompatActivity {
 
+    public String baseDir;
+    public File pdfFile;
+    public String pdf_file;
+    public Context context;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdf);
-
-
         Intent intent = getIntent();
-        String pdf_file = intent.getExtras().getString("pdfFile");
+        pdf_file = intent.getExtras().getString("pdfFile");
+        String sem = intent.getExtras().getString("sem");
+        String type = intent.getExtras().getString("type");
 
-        final Context context = this;
-        Utils u = new Utils();
-        String baseDir = Environment.getExternalStorageDirectory().getAbsolutePath();
+        context = this;
+        baseDir = Environment.getExternalStorageDirectory().getAbsolutePath();
+        pdfFile = new File(Environment.getExternalStorageDirectory(),"/CSE/"+pdf_file+".pdf");//File path
 
-        File pdfFile = new File(Environment.getExternalStorageDirectory(),"/CSE/"+pdf_file+".pdf");//File path
-
-
-        if (pdfFile.exists()) //Checking if the file exists or not
+        if (pdfFile.exists() && pdfFile.length()!=0) //Checking if the file exists or not
         {
-            Uri path = FileProvider.getUriForFile(context,  baseDir, pdfFile);
-            context.grantUriPermission(context.getPackageName(), path, Intent.FLAG_GRANT_READ_URI_PERMISSION);
-            Intent objIntent = new Intent(Intent.ACTION_VIEW);
-            objIntent.setDataAndType(path, "application/pdf");
-            objIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-            context.startActivity(objIntent);
+            openfile();
 
         } else {
 
-            String pdfUrl = "http://ngxapplications.c1.biz/storage/android/cse/5th/qp/"+pdf_file+".pdf";
-
-            Toast.makeText(getApplicationContext(), "Downloading", Toast.LENGTH_SHORT).show();
+            String pdfUrl = Utils.mainUrl+sem+"/"+type+"/"+pdf_file+".pdf";
 
             if (isConnectingToInternet()){
-                new DownloadTask(pdf.this, pdfUrl);
-                Toast.makeText(getApplicationContext(), "Download Complete", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Downloading", Toast.LENGTH_SHORT).show();
+                new DownloadTask(pdf.this, pdfUrl,pdf_file+".pdf");
+
                 }
-            else
-                Toast.makeText(pdf.this, "This file is not downloaded. Please enable internet connection and try again.", Toast.LENGTH_SHORT).show();
+            else {
+                Toast.makeText(getApplicationContext(), "This file is not downloaded. Please enable internet connection and try again.", Toast.LENGTH_SHORT).show();
+            }
 
+            if(pdfFile.exists() && pdfFile.length()!=0) {
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        openfile();
 
-            Uri path = FileProvider.getUriForFile(context,  baseDir, pdfFile);
-            context.grantUriPermission(context.getPackageName(), path, Intent.FLAG_GRANT_READ_URI_PERMISSION);
-            Intent objIntent = new Intent(Intent.ACTION_VIEW);
-            objIntent.setDataAndType(path, "application/pdf");
-            objIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-            context.startActivity(objIntent);
-
+                    }
+                }, 1000);
+            }
         }
-
         finish();
-
     }
     //Check if internet is present or not
     private boolean isConnectingToInternet() {
@@ -76,6 +69,17 @@ public class pdf extends AppCompatActivity {
 
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
         return (networkInfo != null && networkInfo.isConnected());
+    }
+    public void openfile(){
+
+        pdfFile = new File(Environment.getExternalStorageDirectory(),"/CSE/"+pdf_file+".pdf");//File path
+
+        Uri path = FileProvider.getUriForFile(context, baseDir, pdfFile);
+        context.grantUriPermission(context.getPackageName(), path, Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        Intent objIntent = new Intent(Intent.ACTION_VIEW);
+        objIntent.setDataAndType(path, "application/pdf");
+        objIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        context.startActivity(objIntent);
     }
 
 

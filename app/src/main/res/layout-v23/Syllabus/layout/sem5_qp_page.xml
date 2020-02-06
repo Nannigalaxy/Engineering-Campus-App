@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QpPage">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorAccent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+            android:backgroundTint="@color/White">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/qp"
+                android:gravity="center"
+                android:paddingStart="-70dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"/>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="120dp"
+        tools:context=".cs51_qp">
+
+<!--        section 1 start-->
+        <LinearLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+        <TextView
+            android:id="@+id/cs51"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cs51"
+            style="@style/main_text"/>
+
+        <TextView
+            android:id="@+id/sch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_2015_scheme"
+            android:textSize="12sp"/>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="6"
+            android:layout_margin="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_gravity="center">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button1"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="140dp"
+                android:layout_height="55dp"
+                android:layout_margin="5dp"
+                android:text="@string/july_2018"
+                android:textSize="14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button2"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="140dp"
+                android:layout_height="55dp"
+                android:layout_margin="5dp"
+                android:text="@string/jan_2018"
+                android:textSize="14sp" />
+        </GridLayout>
+    </LinearLayout>
+<!--section 1 end-->
+
+            <!--        section 2 start-->
+        <LinearLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/cs52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cs52"
+                style="@style/main_text"/>
+
+            <TextView
+                android:id="@+id/sch2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_2015_scheme"
+                android:textSize="12sp"/>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="6"
+                android:layout_margin="5dp"
+                android:layout_gravity="center">
+
+
+                <Button
+                    android:id="@+id/button3"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    
+                    
+                    android:text="@string/july_2018"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/button4"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    
+                    
+                    android:text="@string/jan_2018"
+                    android:textSize="14sp" />
+            </GridLayout>
+        </LinearLayout>
+        <!--section 2 end-->
+
+        <!--        section 3 start-->
+        <LinearLayout
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+            <TextView
+                android:id="@+id/cs53"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cs53"
+                style="@style/main_text"/>
+
+            <TextView
+                android:id="@+id/sch3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_2015_scheme"
+                android:textSize="12sp"/>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:columnCount="2"
+                android:rowCount="6"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/button5"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    
+                    
+                    android:text="@string/july_2018"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/button6"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    
+                    android:layout_margin="5dp"
+                    
+                    android:text="@string/jan_2018"
+                    android:textSize="14sp" />
+            </GridLayout>
+        </LinearLayout>
+        <!--section 3 end-->
+
+        <!--        section 4 start-->
+        <LinearLayout
+            android:id="@+id/r4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+            <TextView
+                android:id="@+id/cs54"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cs54"
+                style="@style/main_text"/>
+
+            <TextView
+                android:id="@+id/sch4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_2015_scheme"
+                android:textSize="12sp"/>
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:columnCount="2"
+                android:rowCount="6"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/button7"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    
+                    
+                    android:text="@string/july_2018"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/button8"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    
+                    
+                    android:text="@string/jan_2018"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/button9"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    
+                    
+                    android:text="@string/july_2017"
+                    android:textSize="14sp" />
+            </GridLayout>
+        </LinearLayout>
+        <!--section 4 end-->
+
+        <!--        section 5 start-->
+        <LinearLayout
+            android:id="@+id/r5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+            <TextView
+                android:id="@+id/cs552"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cs552"
+                style="@style/main_text"/>
+
+            <TextView
+                android:id="@+id/sch5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_2015_scheme"
+                android:textSize="12sp"/>
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="6"
+                android:layout_margin="5dp"
+                android:layout_gravity="center">
+
+
+                <Button
+                    android:id="@+id/button10"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    
+                    
+                    android:text="@string/july_2018"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/button11"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    
+                    
+                    android:text="@string/jan_2018"
+                    android:textSize="14sp" />
+            </GridLayout>
+        </LinearLayout>
+        <!--section 5 end-->
+
+        <!--        section 6 start-->
+        <LinearLayout
+            android:id="@+id/r6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+            <TextView
+                android:id="@+id/cs553"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cs553"
+                style="@style/main_text"/>
+
+            <TextView
+                android:id="@+id/sch6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_2015_scheme"
+                android:textSize="12sp"/>
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="6"
+                android:layout_margin="5dp"
+                android:layout_gravity="center">
+
+
+                <Button
+                    android:id="@+id/button12"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    
+                    
+                    android:text="@string/july_2018"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/button13"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    
+                    
+                    android:text="@string/jan_2018"
+                    android:textSize="14sp" />
+            </GridLayout>
+        </LinearLayout>
+        <!--section 5 end-->
+
+        <!--        section 7 start-->
+        <LinearLayout
+            android:id="@+id/r7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+            <TextView
+                android:id="@+id/cs562"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cs562"
+                style="@style/main_text"/>
+
+            <TextView
+                android:id="@+id/sch7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/_2015_scheme"
+                android:textSize="12sp"/>
+            <GridLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="6"
+                android:layout_gravity="center"
+                android:layout_margin="5dp">
+
+
+                <Button
+                    android:id="@+id/button14"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    
+                    
+                    android:text="@string/july_2018"
+                    android:textSize="14sp" />
+
+            </GridLayout>
+        </LinearLayout>
+        <!--section 4 end-->
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

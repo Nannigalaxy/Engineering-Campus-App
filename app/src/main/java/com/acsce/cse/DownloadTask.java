@@ -3,7 +3,6 @@ package com.acsce.cse;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Environment;
-import android.os.Handler;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -18,29 +17,29 @@ import java.net.URL;
 
         private static final String TAG = "Download Task";
         private Context context;
-        private String downloadUrl = "", downloadFileName = "";
+        boolean opfile;
+        private String downloadUrl = "", downloadFileName = "", filename = "";
 
-        public DownloadTask(Context context, String downloadUrl) {
+        public DownloadTask(Context context, String downloadUrl, String filename) {
             this.context = context;
             this.downloadUrl = downloadUrl;
+            this.filename = filename;
 
-            downloadFileName = downloadUrl.replace(Utils.mainUrl, "");//Create file name by picking download file name from URL
+            downloadFileName = filename;//Create file name by picking download file name from URL
             Log.e(TAG, downloadFileName);
 
             //Start Downloading Task
             new DownloadingTask().execute();
         }
 
-        private class DownloadingTask extends AsyncTask<Void, Void, Void> {
+        private class DownloadingTask extends AsyncTask<Void, Void, Boolean> {
 
             File apkStorage = null;
             File outputFile = null;
 
-
-
-
             @Override
-            protected Void doInBackground(Void... arg0) {
+            protected Boolean doInBackground(Void... arg0) {
+
                 try {
                     URL url = new URL(downloadUrl);//Create Download URl
                     HttpURLConnection c = (HttpURLConnection) url.openConnection();//Open Url Connection
@@ -51,9 +50,7 @@ import java.net.URL;
                     if (c.getResponseCode() != HttpURLConnection.HTTP_OK) {
                         Log.e(TAG, "Server returned HTTP " + c.getResponseCode()
                                 + " " + c.getResponseMessage());
-
                     }
-
 
                     //Get File if SD card is present
                     if (new CheckForSDCard().isSDCardPresent()) {
@@ -75,7 +72,7 @@ import java.net.URL;
                     //Create New File if not present
                     if (!outputFile.exists() && apkStorage.exists()) {
                         try {
-                            outputFile.createNewFile();
+                            opfile = outputFile.createNewFile();
                             Log.e(TAG, "File Created");
                         }
                         catch (Exception e){
@@ -105,7 +102,13 @@ import java.net.URL;
                     Log.e(TAG, "Download Error Exception " + e.getMessage());
                 }
 
-                return null;
+                return opfile;
+            }
+
+            @Override
+            protected void onPostExecute(Boolean result) {
+                Toast.makeText(context, "Download Complete", Toast.LENGTH_SHORT).show();
+                super.onPostExecute(result);
             }
         }
     }

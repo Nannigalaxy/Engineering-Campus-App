@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SemesterList"
+    android:background="@color/White">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/White"
+        app:layout_scrollFlags="enterAlways"
+        app:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/class_act"
+            android:gravity="center"
+            android:paddingStart="-70dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+    </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/thirdsem"
+            style="@style/sembtn"
+            android:text="@string/sem3"/>
+        <Button
+            android:id="@+id/fourthsem"
+            android:text="@string/sem4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/sembtn"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fifthsem"
+            style="@style/sembtn"
+            android:text="@string/sem5"/>
+        <Button
+            android:id="@+id/sixthsem"
+            android:text="@string/sem6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/sembtn"
+            />
+
+        <Button
+            android:id="@+id/seventhsem"
+            android:text="@string/sem7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/sembtn"
+            />
+        <Button
+            android:id="@+id/eigthsem"
+            android:text="@string/sem8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/sembtn"
+            />
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

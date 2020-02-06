@@ -10,93 +10,94 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorAccent"
         app:layout_scrollFlags="scroll|enterAlways"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:backgroundTint="@color/White"
         >
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/about"
-            android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:paddingStart="-70dp"
             android:textSize="20sp"
-            android:textColor="@color/black_overlay"/>
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
     </androidx.appcompat.widget.Toolbar>
 
-    <RelativeLayout
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="?attr/actionBarSize"
         android:orientation="vertical"
-
-        android:gravity="center"
     tools:context=".About">
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:src="@drawable/bg"
-            android:background="@color/black"/>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginEnd="40dp"
-            android:elevation="8dp"
-            app:cardBackgroundColor="@color/card_bg"
-            app:cardElevation="8dp">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/ver"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20sp"
+                android:text="Version"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
 
-                <TextView
-                    android:id="@+id/dev"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:padding="10dp"
-                    android:text="@string/dev"
-                    android:textColor="@color/White" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:text="1.0.2"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:text="@string/ver"
-                    android:textColor="@color/White" />
+        <TextView
+            android:id="@+id/dev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:text="Developer email"
+            android:textSize="20dp"
+            android:textColor="@color/black" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20sp"
+                android:text="@string/email"
+                android:textColor="@color/black" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:text="@string/credits"
-                    android:textColor="@color/White" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:padding="10dp"
-                    android:text="@string/epanel"
-                    android:textColor="@color/White" />
+    </LinearLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="10dp"
-                    android:text="@string/email"
-                    android:textColor="@color/White" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-</RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/sem_grad"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="-10dp">
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="320dp"
+            android:src="@drawable/bg_pic3"
+            android:layout_marginEnd="-50dp"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="320dp"
+            android:src="@drawable/bg_pic3"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

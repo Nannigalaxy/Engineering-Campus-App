@@ -19,15 +19,7 @@ public class ComingsoonActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comingsoon);
 
-        AssetManager assetManager = getAssets();
-        ImageView imageView1 = findViewById(R.id.cs_logo);
-        try {
-            InputStream ims1 = assetManager.open("aws.jpg");
-            Drawable d1 = Drawable.createFromStream(ims1, null);
-            imageView1.setImageDrawable(d1);
-        } catch (IOException ex) {
-            return;
-        }
+
 
         Toolbar toolbar = findViewById(R.id.toolbar);
 

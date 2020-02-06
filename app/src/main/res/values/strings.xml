@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">CSE</string>
-    <string name="dev">Developer: Nannigalaxy</string>
-    <string name="ver">Version: 1.0(beta)</string>
-    <string name="email">Email: nannigalaxy25@gmail.com</string>
-    <string name="credits">Open Source Library Credits:</string>
-    <string name="epanel">ExpansionPanel by Florent37</string>
+    <string name="email">nannigalaxy25@gmail.com</string>
+
+    <string name="title">Computer Science and Engineering</string>
+    <string name="splash_title">Department\nof\nComputer Science and Engineering</string>
+
 
 
     <string name="events">Events and Workshops</string>
@@ -12,21 +12,41 @@
     <string name="about">About</string>
     <string name="qp">Question Papers</string>
     <string name="class_act">Class</string>
-    <string name="notes">Notes</string>
+    <string name="campus">Campus.uno</string>
+    <string name="nptel">NPTEL</string>
+    <string name="vtu">VTU Results</string>
+    <string name="notes">Study Material</string>
+    <string name="settings">Settings</string>
 
 
+    <string name="sem3">3RD SEMESTER</string>
+    <string name="sem4">4TH SEMESTER</string>
     <string name="sem5">5th Semester</string>
+    <string name="sem6">6TH SEMESTER</string>
+    <string name="sem7">7th Semester</string>
+    <string name="sem8">8TH SEMESTER</string>
 
     <string name="cs51">Management and Entrepreneurship for IT Industry</string>
     <string name="cs52">Computer Networks</string>
     <string name="cs53">Database Management System</string>
     <string name="cs54">Automata Theory and Computability</string>
-    <string name="cs553">Advanced Java and J2EE</string>
     <string name="cs552">Introduction to Software Testing</string>
+    <string name="cs553">Advanced Java and J2EE</string>
     <string name="cs562">Artificial Intelligence</string>
 
     <string name="csl57">Computer Network Laboratory</string>
     <string name="csl58">DBMS Laboratory with Mini Project</string>
+
+    <string name="cs61">Cryptography, Network Security and Cyber Law</string>
+    <string name="cs62">Computer Graphics and Visualization</string>
+    <string name="cs63">System Software and Compiler Design</string>
+    <string name="cs64">Operating Systems</string>
+    <string name="cs651">Data Mining and Data Warehousing</string>
+    <string name="cs653">OperationsResearch</string>
+    <string name="cs664">Python Application Programming</string>
+    <string name="csl67">System Software and Operating System Laboratory</string>
+    <string name="csl68">Computer Graphics Laboratory with Mini Project</string>
+
     <string name="core">Core</string>
     <string name="elective">Professional Elective</string>
     <string name="openelect">Open Elective</string>
@@ -37,6 +57,16 @@
     <string name="crd3">Credit: 03</string>
     <string name="crd2">Credit: 02</string>
 
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string-array name="semester">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
 
     <string name="cs51_content">
 
