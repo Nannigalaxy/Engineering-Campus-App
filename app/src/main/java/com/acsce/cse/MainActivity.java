@@ -14,6 +14,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerlayout;
     private NavigationView nv;
     private ActionBarDrawerToggle dtoggle;
+    Context context;
 
     int sem_no;
 
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        context=this;
         drawerlayout = findViewById(R.id.drawer_layout);
         dtoggle = new ActionBarDrawerToggle(this, drawerlayout, R.string.open, R.string.close);
         drawerlayout.addDrawerListener(dtoggle);
@@ -75,7 +77,26 @@ public class MainActivity extends AppCompatActivity {
                         i.putExtra("page","main");
                         startActivityForResult(i,0);
                         drawerlayout.closeDrawers();
+                        break;
 
+                    case R.id.nav_feedback:
+                        DisplayMetrics displayMetrics = new DisplayMetrics();
+                        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+                        int height = displayMetrics.heightPixels;
+                        int width = displayMetrics.widthPixels;
+                        String  details =  "Android Version: "+Build.VERSION.RELEASE
+                                +"\nSDK Number: "+Build.VERSION.SDK_INT
+                                +"\nProcessor: "+Build.HARDWARE
+                                +"\nModel: "+Build.MANUFACTURER+" "+ Build.MODEL
+                                +"\nDevice Width: "+width
+                                +"\nDevice Height: "+height
+                                +"\n---Please don't edit anything above this line, to help serve you better---\n\n";
+                        Intent intent = new Intent(Intent.ACTION_SEND);
+                        intent.setType("plain/text");
+                        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"nannigalaxy25@gmail.com"});
+                        intent.putExtra(Intent.EXTRA_SUBJECT, "CSE app feedback");
+                        intent.putExtra(Intent.EXTRA_TEXT, details);
+                        context.startActivity(intent);
                         break;
                     default:
                         return true;

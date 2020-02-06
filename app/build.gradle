@@ -7,9 +7,10 @@ android {
         applicationId "com.acsce.cse"
         minSdkVersion 25
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        versionNameSuffix = 'Beta'
     }
     buildTypes {
         release {
