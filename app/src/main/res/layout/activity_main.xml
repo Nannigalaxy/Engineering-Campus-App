@@ -137,45 +137,45 @@
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardvtures"
-            android:layout_width="340dp"
-            android:layout_height="80dp"
-            android:layout_margin="10dp"
-            android:clickable="true"
-            android:elevation="5dp"
-            android:focusable="true"
-            app:cardElevation="8dp"
-            android:onClick="card_vtu_res"
-            app:cardBackgroundColor="@color/colorAccent"
-            android:foreground="@drawable/ripple_effect"
-            app:cardCornerRadius="10dp">
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cardvtures"-->
+<!--            android:layout_width="340dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:clickable="true"-->
+<!--            android:elevation="5dp"-->
+<!--            android:focusable="true"-->
+<!--            app:cardElevation="8dp"-->
+<!--            android:onClick="card_vtu_res"-->
+<!--            app:cardBackgroundColor="@color/colorAccent"-->
+<!--            android:foreground="@drawable/ripple_effect"-->
+<!--            app:cardCornerRadius="10dp">-->
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="5dp"
-                android:layout_gravity="center">
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:padding="5dp"-->
+<!--                android:layout_gravity="center">-->
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="30dp"
-                    android:text="@string/vtu_results"
-                    android:textColor="@color/White"
-                    android:textSize="16sp" />
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_marginStart="30dp"-->
+<!--                    android:text="@string/vtu_results"-->
+<!--                    android:textColor="@color/White"-->
+<!--                    android:textSize="16sp" />-->
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="25dp"
-                    android:src="@drawable/exam_icon" />
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
+<!--                <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginEnd="25dp"-->
+<!--                    android:src="@drawable/exam_icon" />-->
+<!--            </RelativeLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardclass"

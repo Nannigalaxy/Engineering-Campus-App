@@ -10,6 +10,8 @@ import com.google.android.material.snackbar.Snackbar;
 public class Utils {
 
     public static final String downloadDirectory = "CSE";
+
+    //host your own server and store
     public static final String mainUrl = "http://ngxapplications.c1.biz/storage/android/cse/";
 
     public static void showSnackBar(Context context, View view, String text) {

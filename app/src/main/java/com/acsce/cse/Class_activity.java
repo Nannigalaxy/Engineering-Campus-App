@@ -1,11 +1,18 @@
 package com.acsce.cse;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Class_activity extends AppCompatActivity {
     TextView t;
@@ -46,6 +53,7 @@ public class Class_activity extends AppCompatActivity {
 
     }
 
+
     public void card_tt(View view) {
 
         switch (sem_no){
@@ -53,18 +61,19 @@ public class Class_activity extends AppCompatActivity {
 
             case 4:
 
-            case 5:
+            case 5:View v = findViewById(R.id.snackbarPosition);
+                Utils.showSnackBar(getApplicationContext(),v,"TimeTable not yet uploaded");
+                break;
 
-            case 6:
+            case 6:popup();
+            break;
 
             case 7:
 
-            case 8:View v = findViewById(R.id.snackbarPosition);
+            case 8:v = findViewById(R.id.snackbarPosition);
                 Utils.showSnackBar(getApplicationContext(),v,"TimeTable not yet uploaded");
                 break;
         }
-
-
 
     }
 
@@ -74,9 +83,7 @@ public class Class_activity extends AppCompatActivity {
         Intent intent = new Intent(Class_activity.this, SylbActivity.class);
         intent.putExtra("sem",sem_no);
         startActivity(intent);
-
     }
-
 
 
     public void card_notes(View view) {
@@ -84,7 +91,6 @@ public class Class_activity extends AppCompatActivity {
         Intent intent = new Intent(Class_activity.this, NotesPage.class);
         intent.putExtra("sem",sem_no);
         startActivity(intent);
-
     }
 
     public void card_qp(View view) {
@@ -92,6 +98,40 @@ public class Class_activity extends AppCompatActivity {
         Intent intent = new Intent(Class_activity.this, QpPage.class);
         intent.putExtra("sem",sem_no);
         startActivity(intent);
+
+    }
+
+    public void popup(){
+        AlertDialog.Builder builder
+                = new AlertDialog
+                .Builder(Class_activity.this);
+
+        builder.setTitle("Select Class");
+        builder.setCancelable(true);
+        builder.setNegativeButton("Class A",  new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which)
+            {
+                Intent i = new Intent(Class_activity.this, PDFViewer.class);
+                i.putExtra("pdfFile",  "sem6A_tt");
+                i.putExtra("sem",  "sem"+sem_no);
+                i.putExtra("type",  "notes");
+                startActivity(i);
+            }
+        });
+        builder.setPositiveButton("Class B", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which)
+            {
+                View v = findViewById(R.id.snackbarPosition);
+                Utils.showSnackBar(getApplicationContext(),v,"TimeTable not yet uploaded");
+            }
+        });
+
+
+
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
 
     }
 }

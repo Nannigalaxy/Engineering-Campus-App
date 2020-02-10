@@ -13,7 +13,7 @@ import android.os.Handler;
 import android.widget.Toast;
 import java.io.File;
 
-public class pdf extends AppCompatActivity {
+public class PDFViewer extends AppCompatActivity {
 
     public String baseDir;
     public File pdfFile;
@@ -43,7 +43,7 @@ public class pdf extends AppCompatActivity {
 
             if (isConnectingToInternet()){
                 Toast.makeText(getApplicationContext(), "Downloading", Toast.LENGTH_SHORT).show();
-                new DownloadTask(pdf.this, pdfUrl,pdf_file+".pdf");
+                new DownloadTask(PDFViewer.this, pdfUrl,pdf_file+".pdf");
 
                 }
             else {
@@ -70,10 +70,11 @@ public class pdf extends AppCompatActivity {
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
         return (networkInfo != null && networkInfo.isConnected());
     }
+
+    //open pdf file externally
     public void openfile(){
 
         pdfFile = new File(Environment.getExternalStorageDirectory(),"/CSE/"+pdf_file+".pdf");//File path
-
         Uri path = FileProvider.getUriForFile(context, baseDir, pdfFile);
         context.grantUriPermission(context.getPackageName(), path, Intent.FLAG_GRANT_READ_URI_PERMISSION);
         Intent objIntent = new Intent(Intent.ACTION_VIEW);

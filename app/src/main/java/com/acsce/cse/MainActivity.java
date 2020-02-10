@@ -5,8 +5,10 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -47,8 +49,13 @@ public class MainActivity extends AppCompatActivity {
 
         prefManager = new PreferenceManager(this);
 
-        requestPermissions(new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
-        requestPermissions(new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+        if (android.os.Build.VERSION.SDK_INT>=23) {
+            requestPermissions(new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+            requestPermissions(new String[]{android.Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+        }
+        else {
+            ContextCompat.checkSelfPermission(this, Manifest.permission_group.STORAGE);
+        }
 
         ImageView drawerButton = findViewById(R.id.dbtn);
         drawerButton.setOnClickListener(
@@ -60,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+        //Navigation Drawer option activity
         nv = findViewById(R.id.nav_drawer);
         nv.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -101,10 +109,7 @@ public class MainActivity extends AppCompatActivity {
                     default:
                         return true;
                 }
-
-
                 return true;
-
             }
         });
         displayName();
@@ -156,6 +161,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+
     public void card_nptel(View view) {
 
         Intent intent = new Intent(MainActivity.this, WebActivity.class);
@@ -171,22 +178,23 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void card_vtu_res(View view) {
+    //need fix in WebActivity so disable for now
+//    public void card_vtu_res(View view) {
+//
+//        Intent intent = new Intent(MainActivity.this, WebActivity.class);
+//        intent.putExtra("webContent",  "vtu result");
+//
+//        if (isConnectingToInternet()) {
+//            Toast.makeText(getApplicationContext(),"Loading VTU Result page", Toast.LENGTH_SHORT).show();
+//            startActivity(intent);
+//        }
+//        else{
+//            NoInternet();
+//        }
+//
+//    }
 
-        Intent intent = new Intent(MainActivity.this, WebActivity.class);
-        intent.putExtra("webContent",  "vtu result");
-
-        if (isConnectingToInternet()) {
-            Toast.makeText(getApplicationContext(),"Loading VTU Result page", Toast.LENGTH_SHORT).show();
-            startActivity(intent);
-        }
-        else{
-            NoInternet();
-        }
-
-    }
-
-
+    //display name on main screen and nav drawer
     public void displayName(){
 
         String name = prefManager.getDefaults(prefManager.name_key, MainActivity.this);
@@ -199,10 +207,12 @@ public class MainActivity extends AppCompatActivity {
             if (!name.equals("")){
                 String fname=name.split(" ")[0];
                 if(fname.length()!=1) {
-                    main_title.setText("Welcome, " + fname);
+                    String disp_name = "Welcome, " + fname;
+                    main_title.setText(disp_name);
                 }
                 else {
-                    main_title.setText("Welcome, " + name.split(" ")[name.split(" ").length-1]);
+                    String disp_name = "Welcome, " + name.split(" ")[name.split(" ").length-1];
+                    main_title.setText(disp_name);
                 }
                 nav_name_text.setText(name);
                 nav_uni_text.setText(uni_val);
@@ -213,6 +223,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+
     public void popup(){
         AlertDialog.Builder builder
                 = new AlertDialog
@@ -221,7 +232,7 @@ public class MainActivity extends AppCompatActivity {
         builder.setMessage("Do you want to fill credentials?");
 
         builder.setTitle("Use Auto Login feature");
-        builder.setCancelable(false);
+        builder.setCancelable(true);
         builder.setPositiveButton("Settings", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which)
@@ -245,14 +256,6 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
 
-    }
-
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data)
-    {
-        displayName();
-        super.onActivityResult(requestCode,resultCode,data);
     }
 
 

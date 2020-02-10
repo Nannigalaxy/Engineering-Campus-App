@@ -19,15 +19,16 @@ public class SylbActivity extends AppCompatActivity {
     ExpandableRelativeLayout expandableLayout;
     boolean iconExpanded = true;
     Toolbar toolbar;
-    TextView t;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_syllb);
+
         Intent intent = getIntent();
         int sem_no = intent.getExtras().getInt("sem");
 
+        //created cases as per sem and respective layout
         switch (sem_no) {
             case 5: setContentView(R.layout.sem5_syllb);
             toolbar();
@@ -40,33 +41,24 @@ public class SylbActivity extends AppCompatActivity {
         }
 
 
-//        final String csl57_man = "csl57_man";
-//        final String csl58_man = "csl58_man";
-//
-//        Button btn8 = findViewById(R.id.btn8);
-//        Button btn9 = findViewById(R.id.btn9);
-
-
-//        btn8.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                //add pdf viewer directly for lab manual
-//                Intent i = new Intent(SylbActivity.this, pdf.class);
-//                i.putExtra("pdfFile",  csl57_man);
-//                startActivity(i);
-//            }
-//        });
-//        btn9.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent i = new Intent(SylbActivity.this, pdf.class);
-//                i.putExtra("pdfFile",  csl58_man);
-//                startActivity(i);
-//            }
-//        });
-
-
     }
+
+    void toolbar(){
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+    }
+
+
+    //*** Common layout for multiple semester view ***
+    //*** change content in xml layout respectively ***
 
     //buttons
     public void button1 (View view) {
@@ -210,18 +202,7 @@ public class SylbActivity extends AppCompatActivity {
 
     }
 
-    void toolbar(){
-        toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
-    }
+
     void notuploaded(){
         setContentView(R.layout.coming_soon);
     }

@@ -53,7 +53,7 @@ public class QpPage extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(QpPage.this, pdf.class);
+                Intent i = new Intent(QpPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cs51_jul_18");
                 i.putExtra("sem",  "sem5");
                 i.putExtra("type",  "qp");
@@ -63,7 +63,7 @@ public class QpPage extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(QpPage.this, pdf.class);
+                Intent i = new Intent(QpPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cs51_jan_18");
                 i.putExtra("sem",  "sem5");
                 i.putExtra("type",  "qp");
@@ -75,7 +75,7 @@ public class QpPage extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(QpPage.this, pdf.class);
+                Intent i = new Intent(QpPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cs52_jul_18");
                 i.putExtra("sem",  "sem5");
                 i.putExtra("type",  "qp");
@@ -85,7 +85,7 @@ public class QpPage extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(QpPage.this, pdf.class);
+                Intent i = new Intent(QpPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cs52_jan_18");
                 i.putExtra("sem",  "sem5");
                 i.putExtra("type",  "qp");
@@ -97,7 +97,7 @@ public class QpPage extends AppCompatActivity {
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(QpPage.this, pdf.class);
+                Intent i = new Intent(QpPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cs53_jul_18");
                 i.putExtra("sem",  "sem5");
                 i.putExtra("type",  "qp");
@@ -107,7 +107,7 @@ public class QpPage extends AppCompatActivity {
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(QpPage.this, pdf.class);
+                Intent i = new Intent(QpPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cs53_jan_18");
                 i.putExtra("sem",  "sem5");
                 i.putExtra("type",  "qp");
@@ -119,7 +119,7 @@ public class QpPage extends AppCompatActivity {
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(QpPage.this, pdf.class);
+                Intent i = new Intent(QpPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cs54_jul_18");
                 i.putExtra("sem",  "sem5");
                 i.putExtra("type",  "qp");
@@ -129,7 +129,7 @@ public class QpPage extends AppCompatActivity {
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(QpPage.this, pdf.class);
+                Intent i = new Intent(QpPage.this, PDFViewer.class);
                 i.putExtra("pdfFile", "cs54_jan_18");
                 i.putExtra("sem",  "sem5");
                 i.putExtra("type",  "qp");
@@ -140,7 +140,7 @@ public class QpPage extends AppCompatActivity {
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(QpPage.this, pdf.class);
+                Intent i = new Intent(QpPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cs54_jul_17");
                 i.putExtra("sem",  "sem5");
                 i.putExtra("type",  "qp");
@@ -150,7 +150,7 @@ public class QpPage extends AppCompatActivity {
         btn10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(QpPage.this, pdf.class);
+                Intent i = new Intent(QpPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cs552_jan_18");
                 i.putExtra("sem",  "sem5");
                 i.putExtra("type",  "qp");
@@ -162,7 +162,7 @@ public class QpPage extends AppCompatActivity {
         btn11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(QpPage.this, pdf.class);
+                Intent i = new Intent(QpPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cs552_jul_18");
                 i.putExtra("sem",  "sem5");
                 i.putExtra("type",  "qp");
@@ -172,7 +172,7 @@ public class QpPage extends AppCompatActivity {
         btn12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(QpPage.this, pdf.class);
+                Intent i = new Intent(QpPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cs553_jan_18");
                 i.putExtra("sem",  "sem5");
                 i.putExtra("type",  "qp");
@@ -184,7 +184,7 @@ public class QpPage extends AppCompatActivity {
         btn13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(QpPage.this, pdf.class);
+                Intent i = new Intent(QpPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cs553_jul_18");
                 i.putExtra("sem",  "sem5");
                 i.putExtra("type",  "qp");
@@ -194,7 +194,7 @@ public class QpPage extends AppCompatActivity {
         btn14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(QpPage.this, pdf.class);
+                Intent i = new Intent(QpPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cs562_jul_18");
                 i.putExtra("sem",  "sem5");
                 i.putExtra("type",  "qp");

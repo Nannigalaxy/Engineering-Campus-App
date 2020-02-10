@@ -70,7 +70,7 @@ public class NotesPage extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cns_mod1_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -80,7 +80,7 @@ public class NotesPage extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cns_mod2_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -92,7 +92,7 @@ public class NotesPage extends AppCompatActivity {
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cns_mod3_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -102,7 +102,7 @@ public class NotesPage extends AppCompatActivity {
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cns_mod4_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -114,7 +114,7 @@ public class NotesPage extends AppCompatActivity {
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cns_mod5_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -124,7 +124,7 @@ public class NotesPage extends AppCompatActivity {
         btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cg_mod1_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -136,7 +136,7 @@ public class NotesPage extends AppCompatActivity {
         btn7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cg_mod2_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -146,7 +146,7 @@ public class NotesPage extends AppCompatActivity {
         btn8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile", "cg_mod3_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -157,7 +157,7 @@ public class NotesPage extends AppCompatActivity {
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cg_mod4_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -167,7 +167,7 @@ public class NotesPage extends AppCompatActivity {
         btn10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cg_mod5_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -179,7 +179,7 @@ public class NotesPage extends AppCompatActivity {
         btn11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "ss_mod1_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -189,7 +189,7 @@ public class NotesPage extends AppCompatActivity {
         btn12.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "ss_mod2_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -201,7 +201,7 @@ public class NotesPage extends AppCompatActivity {
         btn13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "ss_mod3_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -211,7 +211,7 @@ public class NotesPage extends AppCompatActivity {
         btn14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "ss_mod4_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -221,7 +221,7 @@ public class NotesPage extends AppCompatActivity {
         btn15.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "ss_mod5_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -231,7 +231,7 @@ public class NotesPage extends AppCompatActivity {
         btn16.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "os_mod1_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -243,7 +243,7 @@ public class NotesPage extends AppCompatActivity {
         btn17.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "os_mod2_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -253,7 +253,7 @@ public class NotesPage extends AppCompatActivity {
         btn18.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile", "os_mod3_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -264,7 +264,7 @@ public class NotesPage extends AppCompatActivity {
         btn19.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "os_mod4_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -274,7 +274,7 @@ public class NotesPage extends AppCompatActivity {
         btn20.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "os_mod5_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -286,7 +286,7 @@ public class NotesPage extends AppCompatActivity {
         btn21.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "dm_mod1_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -296,7 +296,7 @@ public class NotesPage extends AppCompatActivity {
         btn22.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "dm_mod2_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -308,7 +308,7 @@ public class NotesPage extends AppCompatActivity {
         btn23.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "dm_mod3_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -318,7 +318,7 @@ public class NotesPage extends AppCompatActivity {
         btn24.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "dm_mod4_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -328,7 +328,7 @@ public class NotesPage extends AppCompatActivity {
         btn25.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "dm_mod5_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -338,7 +338,7 @@ public class NotesPage extends AppCompatActivity {
         btn26.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "or_mod1_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -350,7 +350,7 @@ public class NotesPage extends AppCompatActivity {
         btn27.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "or_mod2_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -360,7 +360,7 @@ public class NotesPage extends AppCompatActivity {
         btn28.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile", "or_mod3_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -371,7 +371,7 @@ public class NotesPage extends AppCompatActivity {
         btn29.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "or_mod4_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -381,7 +381,7 @@ public class NotesPage extends AppCompatActivity {
         btn30.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "or_mod5_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -393,7 +393,7 @@ public class NotesPage extends AppCompatActivity {
         btn31.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "think_py_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -403,7 +403,7 @@ public class NotesPage extends AppCompatActivity {
         btn32.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "intro_py_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -415,7 +415,7 @@ public class NotesPage extends AppCompatActivity {
         btn33.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "os_manual_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
@@ -425,7 +425,7 @@ public class NotesPage extends AppCompatActivity {
         btn34.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NotesPage.this, pdf.class);
+                Intent i = new Intent(NotesPage.this, PDFViewer.class);
                 i.putExtra("pdfFile",  "cg_manual_compressed");
                 i.putExtra("sem",  "sem"+sem_no);
                 i.putExtra("type",  "notes");
