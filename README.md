@@ -10,3 +10,8 @@ screenshots:<br>
 <img src="https://i.imgur.com/WgqRP0n.jpg" width="200">
 <img src="https://i.imgur.com/KG9DwMd.jpg" width="200">
 <img src="https://i.imgur.com/bVy0JjP.jpg" width="200">
+
+
+## License and Copyright
+
+Licensed under [MIT License](LICENSE)
