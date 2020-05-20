@@ -1,7 +1,7 @@
 # Computer Science and Engineering VTU App
 Android app for Dept. of CSE 
 
-<a href="https://drive.google.com/open?id=1jyOuq7vvV_v2CwkNMLi3CJ5QOGYCsJFQ">app link</a>
+<a href="https://github.com/Nannigalaxy/Engineering-Campus-App/blob/master/cse_1.2_beta.apk">app link</a>
 <br><br>
 
 
